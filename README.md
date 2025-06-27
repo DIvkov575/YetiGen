@@ -1,3 +1,8 @@
+Erik:
+Build an "action" page (src/app/action/page.tsx)
+
+"custom prompt" box
+"go" button, "pick a prompt for me button"
 
 
 
