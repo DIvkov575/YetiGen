@@ -1,11 +1,16 @@
-import Navbar from '@/components/navbar'
+'use client'
+
+import { Navigation } from '@/components/Navigation'
+import { Hero } from '@/components/Hero'
+import { Features } from '@/components/Features'
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <main className="p-8">
-        <h1>Home</h1>
+    <div className="min-h-screen">
+      <Navigation />
+      <main>
+        <Hero />
+        {/*<Features />*/}
       </main>
     </div>
   )

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase-client'
 import { useRouter } from 'next/navigation'
+import { Navigation } from '@/components/Navigation'
 
 export default function ResetPasswordPage() {
   const [password, setPassword] = useState('')
@@ -41,7 +42,9 @@ export default function ResetPasswordPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-50">
+      <Navigation />
+      <div className="flex flex-col justify-center py-12 sm:px-6 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <h1 className="text-center text-3xl font-extrabold text-gray-900 mb-8">
           Set New Password
@@ -98,6 +101,7 @@ export default function ResetPasswordPage() {
             </button>
           </form>
         </div>
+      </div>
       </div>
     </div>
   )
